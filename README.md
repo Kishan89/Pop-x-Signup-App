@@ -50,7 +50,7 @@ pop-x/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Kishan89/Pop-x-Account-Creation.git
+git clone https://github.com/Kishan89/pop-x-Signup-App.git
 cd pop-x
 ```
 
