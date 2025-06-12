@@ -1,0 +1,133 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7fb;
+  box-sizing: border-box;
+}
+
+.signup-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px);
+  padding: 20px;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  padding: 30px 25px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.signup-container h2 {
+  font-size: 28px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #222;
+  line-height: 1;
+}
+
+.signup-container h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #222;
+  line-height: 1.2;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label {
+  font-size: 13px;
+  color: #6e44ff;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 4px;
+}
+
+.signup-form label span.required {
+  color: red;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  color: #000;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.radio-group label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+}
+
+.primary-btn {
+  background-color: #6e44ff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #5a34d2;
+}
+
+.signup-form p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 25px 20px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .signup-container h2 {
+    font-size: 20px;
+  }
+
+  .signup-container h3 {
+    font-size: 18px;
+  }
+
+  .primary-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

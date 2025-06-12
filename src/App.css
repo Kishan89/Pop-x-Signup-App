@@ -1,38 +1,41 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+}
+
 .App {
-  text-align: center;
+  min-height: 100vh; /* okay */
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  font-family: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 6px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
 }
